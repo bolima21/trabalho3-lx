@@ -11,3 +11,8 @@ sudo chown root:gerente /srv
 sudo mkdir -p /srv/alunos /srv/professores
 sudo chown root:aluno /srv/alunos
 sudo chown root:professor /srv/professores
+
+#Q4
+sudo chmod 750 /srv
+sudo chmod 770 /srv/alunos
+sudo chmod 770 /srv/professores
