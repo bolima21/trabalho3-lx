@@ -16,3 +16,9 @@ sudo chown root:professor /srv/professores
 sudo chmod 750 /srv
 sudo chmod 770 /srv/alunos
 sudo chmod 770 /srv/professores
+
+#Q5
+#sudo useradd -m -d  /srv/professores/bruno -g professor --gecos "bruno, professor --disabled-login
+
+#Q6
+sudo usermod -a -G gerente bruno
