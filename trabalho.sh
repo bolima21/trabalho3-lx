@@ -18,7 +18,15 @@ sudo chmod 770 /srv/alunos
 sudo chmod 770 /srv/professores
 
 #Q5
-#sudo useradd -m -d  /srv/professores/bruno -g professor --gecos "bruno, professor --disabled-login
+sudo useradd -m -d /srv/professores/bruno -g professor --gecos "" --disabled-login bruno
 
 #Q6
 sudo usermod -a -G gerente bruno
+
+#Q7
+useradd -m -d /srv/alunos/joao -g aluno --gecos "" --disabled-login joao
+useradd -m -d /srv/alunos/maria -g aluno --gecos "" --disabled-login maria
+
+#Q8
+chage -E 2024-12-31 -M 90 joao
+chage -E 2024-12-31 -M 90 maria
